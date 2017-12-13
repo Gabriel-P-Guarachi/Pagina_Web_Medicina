@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Ejercicio con Login</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="css/paper.css"> -->
+	<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+	<!-- navbar-inverse o navbar-default son para cambiar el estilo del navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		  	<div class="container">
+		    	<div class="navbar-header">
+		    	<!-- Icono hamburguesa -->
+		    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span> 
+				    </button>
+				<!-- Icono hamburguesa -->
+		      		<a class="navbar-brand" href="#">Medilab</a>
+		    	</div>
+		    	
+		    	<div class="collapse navbar-collapse" id="myNavbar">
+		    		<!-- Si deseamos que tenga una parte a la derecha utilizamos la clase navbar-right, y 
+			    	debemos notar que si podemos tener varias listas no ordenadas para que a un lado 
+			    	haya unos botones y al otro otro -->
+				    <ul class="nav navbar-nav navbar-right">
+					    <li class="active"><a href="#">About</a></li>
+					    <li><a href="#">Services</a></li> 
+					    <li><a href="#">Contact</a></li>
+					<!-- Podemos tener una lista desplegable en el navbar con el li -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Portfolio <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Categoria # 1</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Categoria # 2</a></li>
+								<li><a href="#">Categoria # 3</a></li>
+								<li><a href="#">Categoria # 4</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Blog <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Blog # 1</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Blog # 2</a></li>
+								<li><a href="#">Blog # 3</a></li>
+								<li><a href="#">Blog # 4</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Other Pages <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Page # 1</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Page # 2</a></li>
+								<li><a href="#">Page # 3</a></li>
+								<li><a href="#">Page # 4</a></li>
+							</ul>
+						</li>
+
+			    	</ul>
+		    	</div>
+
+		  	</div>
+		</nav>
+
+		<div class="continer-fluid espacioNavbar">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicadores - puntos circulares a cada slide -->
+				<ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				    <li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+
+				<!-- Imagenes del slide -->
+				<div class="carousel-inner">
+				    <div class="item active">
+				      	<img src="images/img_1.jpg" alt="">
+				      	<div class="carousel-caption hidden-xs hidden-sm">
+				      		<h1 class="tituloSlide">Slide #1</h1>
+				      		<p>
+				      			Lorem ipsum dolor sit amet
+				      		</p>
+				      	</div>
+				    </div>
+
+				    <div class="item">
+				      	<img src="images/img_2.jpg" alt="">
+				      	<div class="carousel-caption hidden-xs hidden-sm">
+				      		<h1 class="tituloSlide">Slide #2</h1>
+				      		<p>
+				      			Lorem ipsum dolor sit amet
+				      		</p>
+				      	</div>
+				    </div>
+
+				    <div class="item">
+				      	<img src="images/img_3.jpg" alt="">
+				      	<div class="carousel-caption hidden-xs hidden-sm">
+				      		<h1 class="tituloSlide">Slide #3</h1>
+				      		<p>
+				      			Lorem ipsum dolor sit amet
+				      		</p>
+				      	</div>
+				    </div>
+
+				    <div class="item">
+				      	<img src="images/img_4.jpg" alt="">
+				      	<div class="carousel-caption hidden-xs hidden-sm">
+				      		<h1 class="tituloSlide">Slide #4</h1>
+				      		<p>
+				      			Lorem ipsum dolor sit amet
+				      		</p>
+				      	</div>
+				    </div>
+				</div>
+
+				<!-- Controles del slide anterior y siguiente -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left"></span>
+				    <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right"></span>
+				    <span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="titulo">Welcome Modern Hospital</h2>
+					<hr>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="row fondoCabecera">
+						<span><span class="glyphicon glyphicon-ok espaciado"></span>Bootstrap v3.3.7</span>
+					</div>
+					<div class="row fondoCuerpo">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus itaque nisi tenetur quos, officia. Natus quis incidunt, repellat eius repellendus sed eveniet mollitia quia tempora reiciendis, nisi doloremque deserunt aperiam!
+						<br/><br/>
+						<button class="btn btn-default">Learn More</button>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-xs-12">
+					<div class="row fondoCabecera">
+						<span><span class="glyphicon glyphicon-share espaciado"></span>Free & open Source</span>
+					</div>
+					<div class="row fondoCuerpo">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus itaque nisi tenetur quos, officia. Natus quis incidunt, repellat eius repellendus sed eveniet mollitia quia tempora reiciendis, nisi doloremque deserunt aperiam!
+						<br/><br/>
+						<button class="btn btn-default">Learn More</button>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-xs-12">
+					<div class="row fondoCabecera">
+						<span><span class="glyphicon glyphicon-map-marker espaciado"></span> Ubicaion Exacta</span>
+					</div>
+					<div class="row fondoCuerpo">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus itaque nisi tenetur quos, officia. Natus quis incidunt, repellat eius repellendus sed eveniet mollitia quia tempora reiciendis, nisi doloremque deserunt aperiam!
+						<br/><br/>
+						<button class="btn btn-default">Learn More</button>
+						</p>
+					</div>
+				</div>
+
+				
+
+			</div>
+
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<br/><br/>
+				</div>
+			</div>
+		</div>
+		
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>
